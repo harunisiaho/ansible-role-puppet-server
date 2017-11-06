@@ -1,0 +1,8 @@
+---
+- hosts: puppet-master1
+  become: yes
+  become_method: sudo
+
+  roles:
+    - common
+    - master
